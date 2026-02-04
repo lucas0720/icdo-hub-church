@@ -1,11 +1,11 @@
 /* --- 1. BASE --- */
-@import 'base/_variables.css';
-@import 'base/_reset.css';
+@import './base/_variables.css';
+@import './base/_reset.css';
 
 /* --- 2. LAYOUT (Estructura) --- */
-@import 'layout/_header.css';
-@import 'layout/_footer.css';  /* <--- AGREGA ESTA LÍNEA */
+@import './layout/_header.css';
+@import './layout/_footer.css';  /* <--- AGREGA ESTA LÍNEA */
 
 /* --- 3. COMPONENTS (Piezas) --- */
-@import 'components/_hero.css';
-@import 'components/_carrusel.css'; /* <--- AGREGA ESTA LÍNEA */
+@import './components/_hero.css';
+@import './components/_carrusel.css'; /* <--- AGREGA ESTA LÍNEA */
