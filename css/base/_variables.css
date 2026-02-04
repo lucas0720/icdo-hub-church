@@ -1,0 +1,17 @@
+:root {
+    /* Tipografía */
+    --body-font: "Montserrat", sans-serif; /* Fuente principal  */
+
+  /* Colores del proyecto */
+  --first-color: #eaa934;      /* Dorado para hovers y detalles */
+  --black-color: #0e0e0e;      /* Fondo de header y secciones oscuras */
+  --white-color: #ffffff;      /* Letras y fondos claros */
+ 
+  --text-color: #ffffff;       /* Texto principal (blanco sobre negro) */
+  --text-color-light: #a5a5a5; /* Gris suave para textos menos importantes */
+
+  /* Estructura */
+  /* Altura del header (importante para el espacio de arriba) */
+  --header-height: 3.5rem;
+  --z-fixed: 100;
+}

@@ -1,0 +1,45 @@
+@import url('base/_variables.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font); 
+    font-size: var(--normal-font-size); 
+    background-color: var(--black-color); /* O el color que prefieras de fondo */
+    color: var(--text-color); 
+    height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

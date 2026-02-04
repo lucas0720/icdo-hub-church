@@ -1,0 +1,119 @@
+.header{
+    padding: 1.2rem 0rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed); 
+
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(16px); 
+    border-bottom: 1px solid rgba(11, 11, 11, 0.8);
+
+    .nav{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav__logo{
+            display: flex;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav__toggle , .nav__close{
+            
+            font-size: 1.5rem;
+            color: var(--white-color);
+            cursor: pointer;
+
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0;
+            transition: color .3s, transform .3s;
+
+            &:hover {
+                color: var(--first-color); /* Tu dorado premium */
+                transform: scale(1.1); /* Crece un poquito */
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .nav__menu{
+        position:fixed;
+        top: 0;
+        right: -100%;
+        background-color: var(--black-color);
+        width: 80%;
+        height: 100vh;
+        padding: 7.5rem 3.5rem 0;
+        border-left: 2px solid rgba(255, 255, 255, 0.05);
+        transition: right .4s;
+        z-index: 1000;
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 4rem;
+        }
+
+        .nav__link{
+            color: var(--white-color);
+            font-weight: bold;
+            transition: color 0.4s;
+
+            &:hover{
+                color: var(--first-color);
+            }
+        }
+
+        .nav__close{
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+
+            font-size: 2rem;
+            color: var(--white-color);
+        }
+    }
+}
+
+.show-menu{
+    right: 0;
+}
+
+@media screen and (min-width: 768px){
+    .nav__menu{
+        display: flex;
+
+        .nav__list{
+            display: flex;
+            gap: 3rem;
+            font-size: 1rem;
+            font-weight: 500;
+
+            .nav__link{
+                text-decoration: none;
+                color: var(--white-color);
+                transition: color .3s; 
+
+                &:hover {
+                    color: var(--first-color);
+                }
+            }
+        }
+        .nav__close{
+            display: none;
+        }
+    }
+
+    .nav__toggle{
+        display: none;
+    }
+    
+}
