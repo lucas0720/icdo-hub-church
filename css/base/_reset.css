@@ -12,7 +12,7 @@ html {
 body {
   font-family: var(--body-font); 
   font-size: var(--normal-font-size); 
-  background: linear-gradient(135deg, var(--black-color) 60%, #1a1610 100%);
+  background: rgba(0, 0, 0, 0.95);
   color: var(--text-color); 
   min-height: 100vh;
 }
@@ -38,7 +38,21 @@ button {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
 }
+
+/*
+@keyframes respiracionDorada {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+*/

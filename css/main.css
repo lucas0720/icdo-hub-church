@@ -9,7 +9,7 @@
 /* --- 3. COMPONENTS (Piezas) --- */
 @import './components/_hero.css';
 @import './components/_carrusel.css'; /* <--- AGREGA ESTA LÍNEA */
-
+/*
 body {
   font-family: var(--body-font); 
   font-size: var(--normal-font-size); 
@@ -17,7 +17,7 @@ body {
   color: var(--text-color); 
   min-height: 100vh;
 }
-
+*/
 /*Experimento 1: "La Marea Dorada
 
 @keyframes marea {

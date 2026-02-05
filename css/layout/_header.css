@@ -1,5 +1,5 @@
 .header{
-    padding: 2rem 0rem;
+    padding: 2rem 5rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,6 +26,7 @@
             animation: luzDualInfinita 40s ease-in-out infinite;
 
             transition: color .3s, transform .3s;
+            
             &:hover{
                 color: var(--first-color);
             }
