@@ -7,8 +7,10 @@
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+
     .carrusel__container{
         text-align: center;
+
         .carrusel__subtitle{
             margin-top: 5em;
             padding-top: 10rem;
@@ -22,7 +24,8 @@
             max-width: 100%;
             margin: 2.5rem;
             overflow: hidden;
-            
+            padding: 1rem;
+
             .carrusel__card-list{
 
 
@@ -42,7 +45,9 @@
                         display: block;
                         transition: 0.2 ease;
                         width: 100%; 
-                        
+                        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+                        backface-visibility: hidden;
+
                         .card-image{
                             
                             width: 100%; 
@@ -55,7 +60,14 @@
                         }
 
                         &:hover{
-                            border-color: var(--white-color);
+                            transform: scale(1.05); 
+                            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+                            z-index: 2
+                        }
+                        
+                        :active {
+                            transform: scale(1.05);
+                            border-color: var(--first-color);
                         }
                     }
                 }

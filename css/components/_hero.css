@@ -9,6 +9,8 @@
     padding-top: var(--header-height);
     overflow: hidden;
 
+
+        /*probando git*/
     @media (max-width: 1024px) {
         min-height: 37.5rem;
         max-height: 140rem;
