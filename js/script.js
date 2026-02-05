@@ -2,6 +2,7 @@ const swiper = new Swiper('.card-wrapper', {
 
   loop: true,
   spaceBetween:30,
+  speed: 800,
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -21,9 +22,6 @@ const swiper = new Swiper('.card-wrapper', {
     },
     768: {
         slidesPerView: 2,
-    },
-    1024: {
-        slidesPerView: 3,
     },
     1300: {
         slidesPerView: 4,

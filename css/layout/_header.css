@@ -1,12 +1,12 @@
 .header{
-    padding: 1.2rem 0rem;
+    padding: 2rem 0rem;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: var(--z-fixed); 
 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(16px); 
     border-bottom: 1px solid rgba(11, 11, 11, 0.8);
 
