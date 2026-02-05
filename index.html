@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    
     <title>ICDO - Iglesia Casa de Oracion</title>
     <link rel="preload" as="image" href="./assets/hero-background.webp">
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     
 </head>
 <body>
@@ -59,18 +62,66 @@
                 <figure class="hero__picture">
                     <img class="hero__logo" src="./assets/LOGOACT.png" alt="Logo Principal ICDO">
                 </figure>  
-                </div>
+            </div>
         </section>
 
-        <section class="carrusel__container container">
-            <h2>Working progress</h2>
+        <section class="carrusel">
+            <div class="carrusel__container swiper">
+                
+                <h2 class="carrusel__subtitle"> Relacionado con ICDO </h2>
+
+                <div class="carrusel__cards card-wrapper">
+
+                    <ul class="carrusel__card-list swiper-wrapper">
+
+                        <li class="carrusel__card-item swiper-slide">
+                            <a class="card-link" href="#">
+                                <img class="card-image" src="./assets/cartel.png" alt="Card Image">
+                            </a>
+                        </li>
+
+                        <li class="carrusel__card-item swiper-slide">
+                            <a class="card-link" href="#">
+                                <img class="card-image" src="./assets/cartel.png" alt="Card Image">
+                            </a>
+                        </li>
+
+                        <li class="carrusel__card-item swiper-slide">
+                            <a class="card-link" href="#">
+                                <img class="card-image" src="./assets/cartel.png" alt="Card Image">
+                            </a>
+                        </li>
+
+                        <li class="carrusel__card-item swiper-slide">
+                            <a class="card-link" href="#">
+                                <img class="card-image" src="./assets/cartel.png" alt="Card Image">
+                            </a>
+                        </li>
+
+                        <li class="carrusel__card-item swiper-slide">
+                            <a class="card-link" href="#">
+                                <img class="card-image" src="./assets/cartel.png" alt="Card Image">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class=" swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
         </section>
+ 
     </main>
 
     <footer class="footer">
         <h2>Working progress</h2>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 </html>

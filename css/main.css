@@ -9,3 +9,57 @@
 /* --- 3. COMPONENTS (Piezas) --- */
 @import './components/_hero.css';
 @import './components/_carrusel.css'; /* <--- AGREGA ESTA LÍNEA */
+
+body {
+  font-family: var(--body-font); 
+  font-size: var(--normal-font-size); 
+  background: linear-gradient(135deg, var(--black-color) 60%, #1a1610 100%);
+  color: var(--text-color); 
+  min-height: 100vh;
+}
+
+/*Experimento 1: "La Marea Dorada
+
+@keyframes marea {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    min-height: 100vh;
+
+
+    background: linear-gradient(-45deg, var(--black-color), #1a150e, #000000, #221d15);
+    background-size: 400% 400%;
+    animation: marea 15s ease infinite;
+}
+*/
+
+/*Experimento 2: "Terciopelo Real"
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background: radial-gradient(circle at bottom, #13101c 0%, var(--black-color) 60%);
+}
+*/
+
+/*Experimento 3: "El Eclipse" (Borde Dorado)
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    min-height: 100vh;
+    background-color: var(--black-color);
+    background-image: radial-gradient(
+        circle at 50% 50%, 
+        var(--black-color) 60%, 
+        #1f180d 100%            
+    );
+
+    background-attachment: fixed;
+}
+*/
