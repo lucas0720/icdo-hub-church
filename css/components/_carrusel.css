@@ -23,7 +23,8 @@
 
         .carrusel__cards{
             max-width: 100%;
-            margin: 2.5rem;
+            margin: 0rem 2.5rem;
+            margin-bottom: 2.5rem;
             overflow: hidden;
             padding: 1rem;
 
@@ -119,20 +120,6 @@
     }
     
 }
-@media screen and (max-width: 768px){
-
-    .card-wrapper .swiper-slide-button{
-        display: none;
-    }
-
-    .carrusel__card-item {
-        /*margin: 1rem;esto rompe todo*/
-        /*margin-right: 2rem;*/
-        /*width: 75% !important; tambien lo rompe*/
-        width: 100% !important;
-
-    }
-}
 
 .carrusel {
     
@@ -169,6 +156,24 @@
     z-index: 2;
 }
 
+@media screen and (max-width: 425px){
+   .carrusel .carrusel__container .carrusel__cards{
+        margin: 0;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+
+        .carrusel__card-item {
+        /*margin: 1rem;esto rompe todo*/
+        /*margin-right: 2rem;*/
+        /*width: 75% !important; tambien lo rompe*/
+        width: 100% !important;
+
+    }
+}
 /* ======================================================= */
 /* PRUEBA FINAL 3: FONDO "PARTÍCULAS FLOTANTES"            */
 /* Pegar al final del archivo CSS                          */
