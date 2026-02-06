@@ -1,12 +1,8 @@
 
-.card-list .card-item .card-link:active{
-
-}
 .carrusel{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
     position: relative;
 
     .carrusel__container{
@@ -14,7 +10,7 @@
         margin-bottom: 10rem;
 
         .carrusel__subtitle{
-            margin-top: 5em;
+            margin-top: 15rem;
             font-size: 2.5rem;
             margin-bottom: 5rem;
 
@@ -81,7 +77,6 @@
                 width: 0.5rem;
                 opacity: 1;
                 background: #ccc;
-                margin: 0px 6px;
                 transition:  0.6s ease;
             }
 
@@ -93,11 +88,15 @@
 
             .swiper-slide-button{
                 color: var(--white-color);
-                margin-top: 10rem;
+                margin-top: 0 !important;
+                top: 60%;
+                transform: translateY(-50%);
                 width: 2rem;
                 height: 2rem;
                 transition: 0.3s;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:hover {
                     color: var(--first-color); /* O el color de énfasis de tu iglesia */
                     transform: scale(1.5); /* Un pequeño pop al pasar el mouse */
@@ -158,9 +157,19 @@
 
 @media screen and (max-width: 768px){
     .carrusel .carrusel__container .carrusel__subtitle{
+        
         margin-top: 5rem;
         font-size: 2.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2.5rem;
+
+        
+    }
+
+    .carrusel .carrusel__container .carrusel__cards{
+        
+        padding: 0;
+        margin: 0rem 2.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .carrusel .carrusel__container{
@@ -168,27 +177,11 @@
         margin-bottom: 5rem;
     }
 
+ 
            
 }
 
-@media screen and (max-width: 425px){
-   .carrusel .carrusel__container .carrusel__cards{
-        margin: 0;
-        margin-bottom: 2.5rem;
-    }
 
-    .card-wrapper .swiper-slide-button{
-        display: none;
-    }
-
-        .carrusel__card-item {
-        /*margin: 1rem;esto rompe todo*/
-        /*margin-right: 2rem;*/
-        /*width: 75% !important; tambien lo rompe*/
-        width: 100% !important;
-
-    }
-}
 /* ======================================================= */
 /* PRUEBA FINAL 3: FONDO "PARTÍCULAS FLOTANTES"            */
 /* Pegar al final del archivo CSS                          */
